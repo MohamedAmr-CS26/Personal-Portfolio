@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1,
+        "category" : "poster",
+        "title" : "breaking bad",
+        "description" : "A poster for the TV show Breaking Bad, featuring the main characters and iconic elements from the series."
+    },
+    {
+        "id" : 2,
+        "category" : "branding",
+        "title" : "Drawn By MA",
+        "description" : "A branding design for the artist Drawn By MA, showcasing their unique style and portfolio."
+    },
+    {
+        "id" : 3,
+        "category" : "poster",
+        "title" : "Digger",
+        "description" : "A poster for the movie Digger, showcasing the main characters and key scenes from the film."
+    }
+]

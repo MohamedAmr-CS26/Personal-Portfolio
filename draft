@@ -1,0 +1,37 @@
+const mongoose = require('mongoose');
+
+const projectSchema = new mongoose.Schema({
+  title: { 
+    type: String, 
+    required: true 
+  },
+  category: { 
+    type: String, 
+    required: true 
+  }, // مثل: "Post Production" أو "Graphic Design"
+  coverImage: { 
+    type: String, 
+    required: true 
+  }, // الصورة الرئيسية اللي بتظهر في الصفحة الرئيسية
+  projectOverview: { 
+    type: String 
+  }, // ملخص الشرح اللي في بداية الـ Case Study
+  designDirection: [{ 
+    type: String 
+  }], // قائمة بالنقاط الفنية والاتجاه التصميمي
+  moodboardImages: [{ 
+    type: String 
+  }], // روابط صور مصفوفة الـ Moodboard
+  breakdownImages: [{ 
+    type: String 
+  }], // روابط صور الـ Breakdown والتفاصيل
+  toolsUsed: [{ 
+    type: String 
+  }], // الأدوات المستخدمة مثل: ["Photoshop", "After Effects"]
+  createdAt: { 
+    type: Date, 
+    default: Date.now 
+  }
+});
+
+module.exports = mongoose.model('Project', projectSchema);
